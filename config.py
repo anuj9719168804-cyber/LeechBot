@@ -73,11 +73,11 @@ def _load_credentials_json() -> dict:
 
 _creds = _load_credentials_json()
 
-API_ID = int(os.getenv("API_ID", "0") or _creds.get("API_ID", 0))
-API_HASH = os.getenv("API_HASH", "") or _creds.get("API_HASH", "")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "") or _creds.get("BOT_TOKEN", "")
-OWNER_ID = int(os.getenv("OWNER_ID", "0") or _creds.get("USER_ID", 0))
-DUMP_ID = int(os.getenv("DUMP_ID", "0") or _creds.get("DUMP_ID", 0))
+API_ID = int(os.getenv("API_ID", "20432885") or _creds.get("API_ID", 0))
+API_HASH = os.getenv("API_HASH", "4fdcfab1c7f5e24ae69f3ce6bb234dec") or _creds.get("API_HASH", "")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8813159023:AAGD4yQ3RiYpDoRmq26msJ2Ay_ebBPJ-yVY") or _creds.get("BOT_TOKEN", "")
+OWNER_ID = int(os.getenv("OWNER_ID", "8729304171") or _creds.get("USER_ID", 0))
+DUMP_ID = int(os.getenv("DUMP_ID", "-1003951808679") or _creds.get("DUMP_ID", 0))
 
 # Auto-format DUMP_ID if needed
 if DUMP_ID and len(str(abs(DUMP_ID))) == 10 and not str(DUMP_ID).startswith("-100"):
